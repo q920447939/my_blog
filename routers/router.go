@@ -1,10 +1,12 @@
 package routers
 
 import (
-	"my_blog/controllers"
 	"github.com/astaxie/beego"
+	"my_blog/controllers"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
+	beego.Router("/login", &controllers.LoginController{})
+	beego.Router("/login/long", &controllers.LoginController{}, "POST:Long")
 }

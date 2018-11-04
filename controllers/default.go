@@ -15,5 +15,5 @@ func (c *MainController) Get() {
 	fmt.Println(db)
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
+	c.TplName = "index.html"
 }

@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
+	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 	_ "my_blog/routers"
-	"github.com/astaxie/beego"
 )
 
 func main() {
+	fmt.Println(123)
 	beego.Run()
 }
-
